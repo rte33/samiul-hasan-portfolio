@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samiul Hasan — Portfolio Theme Variations & Visual Emphasis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    }
+    .font-mono {
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    /* Theme color definitions */
+    .theme-cobalt {
+      --bg-paper: #eef2f6;
+      --bg-surface: #ffffff;
+      --text-ink: #0f1b2b;
+      --text-muted: #54657a;
+      --accent: #1d4ed8;
+      --accent-soft: rgba(29, 78, 216, 0.1);
+      --accent-ring: rgba(29, 78, 216, 0.25);
+      --grid-line: rgba(29, 78, 216, 0.06);
+      --card-border: rgba(15, 27, 43, 0.08);
+      --badge-bg: #dbeafe;
+      --badge-text: #1e40af;
+    }
+    .dark .theme-cobalt {
+      --bg-paper: #0b1329;
+      --bg-surface: #132042;
+      --text-ink: #f0f4f8;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --accent-ring: rgba(59, 130, 246, 0.3);
+      --grid-line: rgba(59, 130, 246, 0.08);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --badge-bg: rgba(59, 130, 246, 0.2);
+      --badge-text: #93c5fd;
+    }
+
+    .theme-amber {
+      --bg-paper: #faf8f5;
+      --bg-surface: #ffffff;
+      --text-ink: #1c1917;
+      --text-muted: #665e57;
+      --accent: #d97706;
+      --accent-soft: rgba(217, 119, 6, 0.1);
+      --accent-ring: rgba(217, 119, 6, 0.25);
+      --grid-line: rgba(217, 119, 6, 0.06);
+      --card-border: rgba(28, 25, 23, 0.08);
+      --badge-bg: #fef3c7;
+      --badge-text: #92400e;
+    }
+    .dark .theme-amber {
+      --bg-paper: #141210;
+      --bg-surface: #211c18;
+      --text-ink: #fafaf9;
+      --text-muted: #a8a29e;
+      --accent: #f59e0b;
+      --accent-soft: rgba(245, 158, 11, 0.15);
+      --accent-ring: rgba(245, 158, 11, 0.3);
+      --grid-line: rgba(245, 158, 11, 0.08);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --badge-bg: rgba(245, 158, 11, 0.2);
+      --badge-text: #fde68a;
+    }
+
+    .theme-emerald {
+      --bg-paper: #f2f7f5;
+      --bg-surface: #ffffff;
+      --text-ink: #0f241d;
+      --text-muted: #4e6b62;
+      --accent: #059669;
+      --accent-soft: rgba(5, 150, 105, 0.1);
+      --accent-ring: rgba(5, 150, 105, 0.25);
+      --grid-line: rgba(5, 150, 105, 0.06);
+      --card-border: rgba(15, 36, 29, 0.08);
+      --badge-bg: #d1fae5;
+      --badge-text: #065f46;
+    }
+    .dark .theme-emerald {
+      --bg-paper: #091a14;
+      --bg-surface: #102d23;
+      --text-ink: #ecfdf5;
+      --text-muted: #a7f3d0;
+      --accent: #10b981;
+      --accent-soft: rgba(16, 185, 129, 0.15);
+      --accent-ring: rgba(16, 185, 129, 0.3);
+      --grid-line: rgba(16, 185, 129, 0.08);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --badge-bg: rgba(16, 185, 129, 0.2);
+      --badge-text: #a7f3d0;
+    }
+
+    .theme-nordic {
+      --bg-paper: #f8fafc;
+      --bg-surface: #ffffff;
+      --text-ink: #09090b;
+      --text-muted: #64748b;
+      --accent: #0f172a;
+      --accent-soft: rgba(15, 23, 42, 0.08);
+      --accent-ring: rgba(15, 23, 42, 0.2);
+      --grid-line: rgba(15, 23, 42, 0.05);
+      --card-border: rgba(9, 9, 11, 0.1);
+      --badge-bg: #e2e8f0;
+      --badge-text: #0f172a;
+    }
+    .dark .theme-nordic {
+      --bg-paper: #09090b;
+      --bg-surface: #18181b;
+      --text-ink: #fafafa;
+      --text-muted: #a1a1aa;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --accent-ring: rgba(56, 189, 248, 0.25);
+      --grid-line: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --badge-bg: rgba(56, 189, 248, 0.15);
+      --badge-text: #7dd3fc;
+    }
+
+    .preview-box {
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      background-image: 
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .preview-panel {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--card-border);
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 sm:p-8">
+
+  <div class="max-w-5xl mx-auto space-y-6">
+    <!-- TOP CONTROL BAR -->
+    <header class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="inline-block size-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+          <h1 class="text-xl sm:text-2xl font-bold tracking-tight">Design & Color Scheme Variations</h1>
+        </div>
+        <p class="text-sm text-slate-400 mt-1">4 curated directions tailored for Samiul Hasan's engineering and research trajectory.</p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- THEME TOGGLE (LIGHT / DARK) -->
+        <button 
+          id="modeToggleBtn" 
+          onclick="toggleThemeMode()" 
+          class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono border border-slate-700 transition"
+        >
+          <span id="modeIcon">🌙</span>
+          <span id="modeText">Dark Preview</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- VARIATION SELECTION TABS -->
+    <nav class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
+      <button 
+        onclick="setVariation('cobalt')" 
+        id="tab-cobalt" 
+        class="tab-btn active text-left p-3.5 rounded-xl border border-blue-500 bg-blue-950/40 transition hover:bg-blue-900/30"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-semibold text-blue-400">VAR. 01</span>
+          <span class="size-3 rounded-full bg-blue-600"></span>
+        </div>
+        <div class="mt-2 text-sm font-semibold text-white">Electric Cobalt</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">Power & Circuits</div>
+      </button>
+
+      <button 
+        onclick="setVariation('amber')" 
+        id="tab-amber" 
+        class="tab-btn text-left p-3.5 rounded-xl border border-slate-800 bg-slate-800/40 transition hover:bg-amber-950/30"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-semibold text-amber-400">VAR. 02</span>
+          <span class="size-3 rounded-full bg-amber-500"></span>
+        </div>
+        <div class="mt-2 text-sm font-semibold text-slate-300">Solar Amber</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">Clean PV & IUB Crest</div>
+      </button>
+
+      <button 
+        onclick="setVariation('emerald')" 
+        id="tab-emerald" 
+        class="tab-btn text-left p-3.5 rounded-xl border border-slate-800 bg-slate-800/40 transition hover:bg-emerald-950/30"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-semibold text-emerald-400">VAR. 03</span>
+          <span class="size-3 rounded-full bg-emerald-500"></span>
+        </div>
+        <div class="mt-2 text-sm font-semibold text-slate-300">Photonic Emerald</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">Optics & Biosensing</div>
+      </button>
+
+      <button 
+        onclick="setVariation('nordic')" 
+        id="tab-nordic" 
+        class="tab-btn text-left p-3.5 rounded-xl border border-slate-800 bg-slate-800/40 transition hover:bg-slate-800/60"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-semibold text-sky-400">VAR. 04</span>
+          <span class="size-3 rounded-full bg-slate-200"></span>
+        </div>
+        <div class="mt-2 text-sm font-semibold text-slate-300">Nordic Editorial</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">High-Contrast Academic</div>
+      </button>
+    </nav>
+
+    <!-- STRATEGIC RATIONALE CARD -->
+    <div id="variationSummary" class="p-4 rounded-xl bg-slate-800/70 border border-slate-700/60 text-sm space-y-1">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono uppercase tracking-wider text-blue-400 font-semibold" id="sumTag">Theme Strategy</span>
+        <span class="text-slate-500">•</span>
+        <span class="font-medium text-slate-200" id="sumTitle">Electric Cobalt & Cadence Slate (Power & Circuit Precision)</span>
+      </div>
+      <p class="text-slate-400 text-xs sm:text-sm" id="sumDesc">
+        Emphasizes power electronics (310V/19V buck converter, interleaved boost converter), circuit design (Cadence Virtuoso, PSIM), and substation grid engineering. Deep blue conveys unwavering engineering stability and mathematical rigor.
+      </p>
+    </div>
+
+    <!-- LIVE INTERACTIVE PREVIEW WRAPPER -->
+    <div id="previewContainer" class="theme-cobalt">
+      <div class="preview-box p-6 sm:p-10 rounded-2xl border border-slate-700/50 shadow-2xl transition-all duration-300 space-y-8">
+        
+        <!-- HEADER BAR IN MOCKUP -->
+        <div class="preview-panel p-6 rounded-2xl shadow-sm backdrop-blur-md">
+          <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-wider pb-4 border-b border-black/5 dark:border-white/10" style="color: var(--text-muted)">
+            <span class="font-semibold" style="color: var(--accent)">EEE / B.Sc. 2025</span>
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 rounded-md text-[11px] font-semibold tracking-wider uppercase border" style="border-color: var(--accent); color: var(--accent); background: var(--accent-soft)">
+                Updates →
+              </span>
+              <span class="size-7 rounded-md flex items-center justify-center border text-xs" style="border-color: var(--card-border); color: var(--text-muted)">
+                ☼
+              </span>
+            </div>
+          </div>
+
+          <!-- HERO CONTENT -->
+          <div class="mt-6 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="max-w-xl">
+              <p class="font-mono text-xs uppercase tracking-widest font-semibold" style="color: var(--accent)">
+                Electrical & Electronic Engineering
+              </p>
+              <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-2" style="color: var(--text-ink)">
+                Samiul Hasan
+              </h2>
+              <p class="mt-3 text-sm sm:text-base leading-relaxed" style="color: var(--text-muted)">
+                Electrical and Electronic Engineering graduate from Independent University, Bangladesh with experience in electrical project planning, substation inspections, and solar PV.
+              </p>
+              
+              <div class="mt-5 flex flex-wrap items-center gap-3">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-white shadow-sm transition" style="background-color: var(--accent)">
+                  Download CV (PDF) ↓
+                </span>
+                <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium border" style="border-color: var(--card-border); color: var(--text-ink); background: var(--bg-surface)">
+                  samiulhasan803@gmail.com
+                </span>
+              </div>
+            </div>
+
+            <!-- PORTRAIT WITH GLASS BEVEL -->
+            <div class="shrink-0 w-fit">
+              <div class="w-fit rounded-2xl p-1.5 ring-1 shadow-xl bg-white/10 backdrop-blur-md" style="border-color: var(--card-border)">
+                <img src="/portrait.png" alt="Samiul Hasan" class="size-36 sm:size-40 rounded-xl object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDUCATION SECTION PREVIEW WITH IUB LOGO -->
+        <div class="space-y-4">
+          <div class="flex items-baseline justify-between border-b pb-2" style="border-color: var(--card-border)">
+            <h3 class="text-lg font-bold" style="color: var(--text-ink)">Education</h3>
+            <span class="font-mono text-[11px] uppercase tracking-wider" style="color: var(--text-muted)">Academic Background</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="preview-panel p-5 rounded-2xl shadow-sm md:col-span-2 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-4">
+                  <div class="min-w-0 flex-1">
+                    <p class="font-mono text-[11px] uppercase tracking-wider" style="color: var(--text-muted)">2022 — 2025</p>
+                    <h4 class="mt-1 text-base font-semibold leading-snug" style="color: var(--text-ink)">
+                      Bachelor of Science (B.Sc.) in Electrical & Electronic Engineering
+                    </h4>
+                  </div>
+                  <!-- IUB LOGO BADGE -->
+                  <div class="shrink-0 w-fit rounded-xl bg-white/95 p-2 shadow-sm ring-1 ring-slate-200">
+                    <img src="/iub-logo.png" alt="IUB Logo" class="h-10 w-auto object-contain" />
+                  </div>
+                </div>
+                <p class="mt-2 text-sm font-semibold" style="color: var(--accent)">Independent University, Bangladesh (IUB)</p>
+                <p class="mt-2 text-xs leading-relaxed" style="color: var(--text-muted)">
+                  CGPA 3.32 / 4.00 (147 credits, EQF Level 6). Thesis: Numerical Investigation and Performance Enhancement of a PV-Assisted Solar Thermal Dehydrator Using CFD.
+                </p>
+              </div>
+            </div>
+
+            <!-- QUICK METRIC CARD -->
+            <div class="preview-panel p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+              <div>
+                <p class="font-mono text-[11px] uppercase tracking-wider" style="color: var(--text-muted)">Focus Areas</p>
+                <div class="mt-3 flex flex-wrap gap-1.5">
+                  <span class="px-2 py-1 rounded text-[11px] font-mono" style="background: var(--badge-bg); color: var(--badge-text)">Power Systems</span>
+                  <span class="px-2 py-1 rounded text-[11px] font-mono" style="background: var(--badge-bg); color: var(--badge-text)">Optical SPR</span>
+                  <span class="px-2 py-1 rounded text-[11px] font-mono" style="background: var(--badge-bg); color: var(--badge-text)">PVsyst Solar</span>
+                  <span class="px-2 py-1 rounded text-[11px] font-mono" style="background: var(--badge-bg); color: var(--badge-text)">CFD Thermal</span>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t text-xs font-mono" style="border-color: var(--card-border); color: var(--text-muted)">
+                4 Papers • 1 Grant
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICATIONS BADGE EMPHASIS PREVIEW -->
+        <div class="space-y-4">
+          <div class="flex items-baseline justify-between border-b pb-2" style="border-color: var(--card-border)">
+            <h3 class="text-lg font-bold" style="color: var(--text-ink)">Research Publications</h3>
+            <span class="font-mono text-[11px] uppercase tracking-wider" style="color: var(--text-muted)">Peer-reviewed & Submitted</span>
+          </div>
+
+          <div class="preview-panel p-5 rounded-2xl shadow-sm space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-xs font-semibold" style="color: var(--accent)">[1]</span>
+              <div class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-muted)">
+                Hasan, S., Mahmud, F., Kanon, S., Islam, S.M. M., & Zaman, K. S. (2026). 
+                <span class="font-semibold" style="color: var(--text-ink)">Environmental Compensation and Physics-Informed Machine Learning Calibration of a Low-Cost Optical Dust Sensor for PM2.5 and AQI Monitoring.</span> 
+                Indoor and Built Environment (Sage Publications).
+                <span class="ml-2 inline-block px-2 py-0.5 rounded text-[10px] font-mono uppercase font-semibold" style="background: var(--badge-bg); color: var(--badge-text)">
+                  Under Review
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 pt-2 border-t" style="border-color: var(--card-border)">
+              <span class="font-mono text-xs font-semibold" style="color: var(--accent)">[2]</span>
+              <div class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-muted)">
+                Hasan, S., Mahmud, F., Shaharia, N. A., Sharma, H., Nabil, M. A., Zaman, K. S., & Ahmed, F. (2026). 
+                <span class="font-semibold" style="color: var(--text-ink)">An Au/ITO Dual-Layer Photonic Crystal Fiber Surface Plasmon Resonance Biosensor for Label-Free Detection of Cancer Cells.</span> 
+                iCACCESS 2026.
+                <span class="ml-2 inline-block px-2 py-0.5 rounded text-[10px] font-mono uppercase font-semibold" style="background: var(--badge-bg); color: var(--badge-text)">
+                  Accepted
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COMPARISON MATRIX -->
+    <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 space-y-4">
+      <h3 class="text-base font-bold text-white">Theme Comparison & What Each Emphasizes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+        <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/50 space-y-1.5">
+          <div class="font-bold text-blue-400">1. Electric Cobalt</div>
+          <p class="text-slate-300 font-medium">Core Persona: Hardware & Power Engineer</p>
+          <p class="text-slate-400">Best for showcasing circuit design, switchgear, Cadence GPDK, and utility-scale solar PV.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/50 space-y-1.5">
+          <div class="font-bold text-amber-400">2. Solar Amber</div>
+          <p class="text-slate-300 font-medium">Core Persona: Clean Energy & Grant Winner</p>
+          <p class="text-slate-400">Harmonizes with the IUB crest flame and draws immediate attention to the IKEA Foundation dehydrator award.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/50 space-y-1.5">
+          <div class="font-bold text-emerald-400">3. Photonic Emerald</div>
+          <p class="text-slate-300 font-medium">Core Persona: Deep Tech Researcher</p>
+          <p class="text-slate-400">Highlights cancer biosensing optics, laser wavelengths, and environmental PM2.5 monitoring.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/50 space-y-1.5">
+          <div class="font-bold text-sky-400">4. Nordic Editorial</div>
+          <p class="text-slate-300 font-medium">Core Persona: International Academic</p>
+          <p class="text-slate-400">High-contrast Swiss architectural layout favored by top graduate admissions committees (MIT/ETH/Stanford).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const strategies = {
+      cobalt: {
+        tag: "Theme Strategy 01",
+        title: "Electric Cobalt & Cadence Slate (Power & Circuit Precision)",
+        desc: "Emphasizes power electronics (310V/19V buck converter, interleaved boost converter), circuit design (Cadence Virtuoso, PSIM), and substation grid engineering. Deep blue conveys unwavering engineering stability and mathematical rigor.",
+        buttonBorder: "border-blue-500",
+        buttonBg: "bg-blue-950/40"
+      },
+      amber: {
+        tag: "Theme Strategy 02",
+        title: "Solar Amber & Institutional Gold (Clean Energy & IUB Heritage)",
+        desc: "Directly echoes the Independent University, Bangladesh emblem's golden ribbon and warm flame! Brings high-energy visual warmth to the IKEA Foundation solar thermal dehydrator grant, renewable PVsyst projects, and live milestone updates.",
+        buttonBorder: "border-amber-500",
+        buttonBg: "bg-amber-950/40"
+      },
+      emerald: {
+        tag: "Theme Strategy 03",
+        title: "Photonic Emerald & Biosensing Tech (Optics & Environmental Innovation)",
+        desc: "Represents laser optics, photonic crystal fibers (Au/ITO SPR cancer biosensors), and clean environmental monitoring (low-cost optical dust sensor calibration). Evokes precision laboratory science and sustainable technology.",
+        buttonBorder: "border-emerald-500",
+        buttonBg: "bg-emerald-950/40"
+      },
+      nordic: {
+        tag: "Theme Strategy 04",
+        title: "Nordic Minimalist Slate & High-Contrast Drafting (Academic Authority)",
+        desc: "Ultra-crisp Swiss architectural drafting style with monochromatic ink and a single hyper-saturated electric blue focal accent. Puts 100% of attention on publications list, thesis rigour, and direct CV download.",
+        buttonBorder: "border-sky-500",
+        buttonBg: "bg-slate-800/80"
+      }
+    };
+
+    let currentTheme = 'cobalt';
+    let isDark = false;
+
+    function setVariation(themeName) {
+      currentTheme = themeName;
+      const container = document.getElementById('previewContainer');
+      container.className = `theme-${themeName}`;
+
+      // Update tabs styling
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.className = "tab-btn text-left p-3.5 rounded-xl border border-slate-800 bg-slate-800/40 transition";
+      });
+      const activeBtn = document.getElementById(`tab-${themeName}`);
+      activeBtn.className = `tab-btn active text-left p-3.5 rounded-xl border ${strategies[themeName].buttonBorder} ${strategies[themeName].buttonBg} transition`;
+
+      // Update info banner
+      document.getElementById('sumTag').textContent = strategies[themeName].tag;
+      document.getElementById('sumTitle').textContent = strategies[themeName].title;
+      document.getElementById('sumDesc').textContent = strategies[themeName].desc;
+    }
+
+    function toggleThemeMode() {
+      isDark = !isDark;
+      const html = document.documentElement;
+      if (isDark) {
+        html.classList.add('dark');
+        document.getElementById('modeIcon').textContent = '☀️';
+        document.getElementById('modeText').textContent = 'Light Preview';
+      } else {
+        html.classList.remove('dark');
+        document.getElementById('modeIcon').textContent = '🌙';
+        document.getElementById('modeText').textContent = 'Dark Preview';
+      }
+    }
+  </script>
+</body>
+</html>

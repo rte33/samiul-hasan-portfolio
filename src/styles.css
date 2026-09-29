@@ -1,0 +1,151 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — Blueprint Grid academic portfolio.
+ * Paper surface, ink text, blueprint-blue accents. IBM Plex Sans/Mono.
+ * Supports persistent light and dark viewing modes.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Portfolio palette */
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-inksoft: var(--inksoft);
+  --color-blueprint: var(--blueprint);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-outline: var(--outline);
+
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.985 0.004 247);        /* #f8fafc clean nordic drafting paper */
+  --foreground: oklch(0.14 0.005 285);         /* #09090b onyx ink */
+  --card: oklch(1 0 0);                        /* #ffffff crisp white */
+  --card-foreground: oklch(0.14 0.005 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0.005 285);
+  --primary: oklch(0.18 0.02 260);             /* #0f172a deep nordic slate */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.006 247);
+  --secondary-foreground: oklch(0.14 0.005 285);
+  --muted: oklch(0.95 0.006 247);
+  --muted-foreground: oklch(0.55 0.025 257);    /* #64748b architectural slate */
+  --accent: oklch(0.94 0.006 247);
+  --accent-foreground: oklch(0.14 0.005 285);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0.003 247);
+  --border: oklch(0.91 0.008 247);            /* #e2e8f0 hairline border */
+  --input: oklch(0.91 0.008 247);
+  --ring: oklch(0.18 0.02 260);
+
+  --paper: oklch(0.985 0.004 247);             /* #f8fafc */
+  --ink: oklch(0.14 0.005 285);                /* #09090b */
+  --inksoft: oklch(0.55 0.025 257);            /* #64748b */
+  --blueprint: oklch(0.18 0.02 260);           /* #0f172a deep nordic slate */
+  --line: oklch(0.91 0.008 247);               /* #e2e8f0 */
+  --surface: oklch(1 0 0);                     /* #ffffff pure white */
+  --surface-strong: oklch(1 0 0);
+  --outline: oklch(0.14 0.005 285 / 8%);
+}
+
+.dark {
+  --background: oklch(0.14 0.005 285);         /* #09090b deep obsidian zinc */
+  --foreground: oklch(0.985 0.002 247);        /* #fafafa pure white ink */
+  --card: oklch(0.21 0.006 285);               /* #18181b elevated surface */
+  --card-foreground: oklch(0.985 0.002 247);
+  --popover: oklch(0.21 0.006 285);
+  --popover-foreground: oklch(0.985 0.002 247);
+  --primary: oklch(0.78 0.14 235);             /* #38bdf8 electric cyan/sky */
+  --primary-foreground: oklch(0.14 0.005 285);
+  --secondary: oklch(0.24 0.006 285);
+  --secondary-foreground: oklch(0.985 0.002 247);
+  --muted: oklch(0.24 0.006 285);
+  --muted-foreground: oklch(0.72 0.01 260);    /* #a1a1aa zinc silver */
+  --accent: oklch(0.24 0.006 285);
+  --accent-foreground: oklch(0.985 0.002 247);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0.003 247);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.78 0.14 235);
+
+  --paper: oklch(0.14 0.005 285);
+  --ink: oklch(0.985 0.002 247);
+  --inksoft: oklch(0.72 0.01 260);
+  --blueprint: oklch(0.78 0.14 235);
+  --line: oklch(1 0 0 / 10%);
+  --surface: oklch(0.21 0.006 285);
+  --surface-strong: oklch(0.27 0.006 285);
+  --outline: oklch(1 0 0 / 10%);
+}
+
+/* Engineering graph-paper background */
+@utility grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--blueprint) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--blueprint) 5%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Frosted drafting-sheet panel used across every section */
+@utility panel {
+  background: color-mix(in oklab, var(--surface) 92%, transparent);
+  backdrop-filter: blur(24px);
+  border-radius: min(1vw, 12px);
+  box-shadow: 0 0 0 1px var(--outline);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+}

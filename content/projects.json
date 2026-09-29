@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "solar-thermal-dehydrator",
+    "fig": "Fig. 01",
+    "year": "2024 — 2025",
+    "title": "PV-Assisted Solar Thermal Dehydrator",
+    "summary": "CFD-optimized off-grid solar thermal dehydrator for rural agricultural food preservation; awarded grant funding by Energy Saving Trust & IKEA Foundation.",
+    "image": "case-soc",
+    "caption": "CFD airflow and temperature distribution model for the solar thermal dehydrator chamber.",
+    "objectives": [
+      "Develop an off-grid solar thermal dehydrator tailored for rural agricultural food preservation.",
+      "Optimize internal drying chamber temperature distribution and air velocity using computational fluid dynamics (CFD).",
+      "Implement PV-assisted active ventilation for uniform crop moisture removal and energy autonomy."
+    ],
+    "methods": [
+      "Constructed 3D multiphysics CFD simulations to model convective heat transfer and air velocity profiles.",
+      "Integrated solar thermal collectors with auxiliary PV-powered airflow fans for off-grid operation.",
+      "Conducted experimental dehydration trials to validate thermal efficiency and drying kinetics."
+    ],
+    "results": [
+      { "metric": "UK Grant", "value": "BDT 35k" },
+      { "metric": "Energy Source", "value": "100% Solar" },
+      { "metric": "Application", "value": "Rural Agri" }
+    ],
+    "resultNotes": "Awarded grant funding under the Efficiency for Access Design Challenge UK (2024–2025) funded by the IKEA Foundation.",
+    "tools": ["ANSYS / COMSOL CFD", "PVsyst", "Thermal Modeling", "AutoCAD"]
+  },
+  {
+    "slug": "self-balancing-robot",
+    "fig": "Fig. 02",
+    "year": "2025",
+    "title": "Two-Wheeled Self-Balancing Robot",
+    "summary": "Inverted-pendulum robotics platform with real-time PID feedback control and inertial sensor fusion for dynamic equilibrium.",
+    "image": "case-rf",
+    "caption": "Hardware chassis, sensor integration, and motor driver circuitry for the two-wheeled self-balancing robot.",
+    "objectives": [
+      "Design an inverted-pendulum two-wheeled mobile robot with dynamic tilt stabilization.",
+      "Implement real-time PID feedback control for attitude correction under external disturbances.",
+      "Develop motor driver circuits and power management for responsive torque control."
+    ],
+    "methods": [
+      "Integrated an IMU (gyroscope and accelerometer) with complementary filtering for accurate tilt angle estimation.",
+      "Programmed discrete PID closed-loop control algorithms for dynamic balance and forward/reverse motion.",
+      "Tuned proportional, integral, and derivative gains experimentally on custom motor driver hardware."
+    ],
+    "results": [
+      { "metric": "Control Loop", "value": "Real-time PID" },
+      { "metric": "Stability", "value": "< 1.5° tilt error" },
+      { "metric": "Control Rate", "value": "100 Hz" }
+    ],
+    "resultNotes": "Maintained balance across varied surfaces and responded dynamically to push disturbances.",
+    "tools": ["PID Control", "Embedded C / Arduino", "IMU Filtering", "Motor Drivers"]
+  },
+  {
+    "slug": "dual-stage-buck-converter",
+    "fig": "Fig. 03",
+    "year": "2025",
+    "title": "310V / 19V 500W Dual-Stage Buck Converter",
+    "summary": "High-efficiency MOSFET-based DC-DC step-down converter with symmetrical duty cycle operating at 20 kHz.",
+    "image": "case-fault",
+    "caption": "Circuit schematic, switching waveforms, and voltage regulation response simulated in PSIM and MATLAB.",
+    "objectives": [
+      "Design a 310 V to 19 V DC-DC step-down converter delivering up to 500 W output power.",
+      "Achieve high conversion efficiency with symmetrical duty cycles operating at 20 kHz.",
+      "Ensure strict voltage regulation and stability under varying resistive load conditions."
+    ],
+    "methods": [
+      "Formulated analytical state-space equations for dual-stage MOSFET power stage switching.",
+      "Simulated inductor ripple current, capacitor voltage ripple, and thermal losses.",
+      "Evaluated dynamic load response and efficiency curves across variable resistive loading."
+    ],
+    "results": [
+      { "metric": "Input / Output", "value": "310V → 19V" },
+      { "metric": "Power Rating", "value": "500 W" },
+      { "metric": "Switching Freq", "value": "20 kHz" }
+    ],
+    "resultNotes": "Verified stable voltage regulation across full load transitions with low output voltage ripple.",
+    "tools": ["PSIM", "MATLAB/Simulink", "Proteus", "Power Electronics"]
+  }
+]

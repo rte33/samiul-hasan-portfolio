@@ -1,0 +1,77 @@
+{
+  "updated": "2026-09-30",
+  "intro": "What Samiul Hasan is working on now, plus a timestamped record of engineering experience, publications, and awards.",
+  "title": "Updates — Samiul Hasan",
+  "description": "What Samiul Hasan is working on now, plus a timestamped log of engineering experience, research publications, and milestones.",
+  "now": {
+    "date": "Now",
+    "time": "",
+    "tag": "In progress",
+    "title": "Intern Engineer at Pacific Power Tech & Research Assistant at IUB",
+    "detail": "Preparing Single Line Diagrams (SLDs) and procurement BOQs, conducting substation inspections, designing rooftop solar PV (PVsyst), and advancing optical dust sensor and power electronics manuscripts."
+  },
+  "entries": [
+    {
+      "date": "Sep 2026",
+      "time": "",
+      "tag": "Journal",
+      "title": "Journal Paper Submitted to Sage",
+      "detail": "Submitted 'Environmental Compensation and Physics-Informed Machine Learning Calibration of a Low-Cost Optical Dust Sensor for PM2.5 and AQI Monitoring' to Indoor and Built Environment."
+    },
+    {
+      "date": "Aug 2026",
+      "time": "",
+      "tag": "Role",
+      "title": "Joined Pacific Power Tech as Intern Engineer",
+      "detail": "Working on electrical Single Line Diagrams (AutoCAD Electrical), substation inspections (HT/LT switchgear, transformers, grounding), and a 2,232 sq. ft. rooftop solar PV design in PVsyst."
+    },
+    {
+      "date": "Aug 2026",
+      "time": "",
+      "tag": "Conference",
+      "title": "Presented at IEEE PEEIACON 2026",
+      "detail": "Presented 'High Step-Up Interleaved Boost Converter with Coupled Inductors and Cascadable Symmetric Voltage Multiplier Cell' in Dhaka, Bangladesh."
+    },
+    {
+      "date": "2026",
+      "time": "",
+      "tag": "Conference",
+      "title": "Paper Accepted at iCACCESS 2026",
+      "detail": "Co-authored accepted paper on an Au/ITO dual-layer photonic crystal fiber surface plasmon resonance biosensor for label-free cancer cell discrimination."
+    },
+    {
+      "date": "Dec 2025",
+      "time": "",
+      "tag": "Publication",
+      "title": "Paper Published at IEEE EICT 2025",
+      "detail": "Numerical investigation of ZrN-ITO coated photonic crystal fiber plasmonic refractive index sensor published in IEEE conference proceedings.",
+      "links": [
+        {
+          "label": "IEEE Xplore",
+          "url": "https://doi.org/10.1109/EICT68394.2025.11355580"
+        }
+      ]
+    },
+    {
+      "date": "2025",
+      "time": "",
+      "tag": "Leadership",
+      "title": "Vice Chairperson — IEEE Photonics Society IUB Student Branch",
+      "detail": "Led planning and execution of departmental workshops (including Radio Astronomy) and coordinated educational industrial visit to BTCL."
+    },
+    {
+      "date": "2025",
+      "time": "",
+      "tag": "Award",
+      "title": "Efficiency for Access Design Challenge UK — IKEA Foundation Grant",
+      "detail": "Awarded grant funding of BDT 35,000 by Energy Saving Trust & IKEA Foundation to develop an off-grid solar thermal dehydrator."
+    },
+    {
+      "date": "Aug 2024",
+      "time": "",
+      "tag": "Competition",
+      "title": "Champion — Line Following Robot Competition",
+      "detail": "Won First Place in the Line Following Robot Competition at IUB EEE Innovation Fest 2024."
+    }
+  ]
+}

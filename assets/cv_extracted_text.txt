@@ -1,0 +1,92 @@
+=== PAGE 1 ===
+Samiul Hasan 
+Date of birth: 2002/05/03  Nationality: Bangladeshi  Phone number: (+880) 1716823310 (Mobile)  
+Email address: samiulhasan803@gmail.com  
+Address: kha-88/3, Park road,Purba Namapara,Khilkhet, 1229, Dhaka, Bangladesh
+(Home)   
+Electrical and Electronic Engineering graduate with practical experience in electrical project planning, material estimation, technical
+documentation, and site inspections. My interests include sustainable energy systems, advanced power electronics, and optical
+sensing technologies, with a strong interest in applying engineering knowledge to practical research and development.
+2022/01/20 – 2025/12/31 Dhaka, Bangladesh 
+BACHELOR OF SCIENCE (B.SC.) Independent University, Bangladesh (IUB) 
+Website https://iub.ac.bd/ Field of studyElectrical and Electronic Engineering (EEE) Final grade3.32 Level in EQFEQF level 6 
+Number of credits147 ThesisNumerical Investigation and Performance Enhancement of a PV-Assisted Solar Thermal Dehydrator Using CFD
+INTERN ENGINEER – PACIFIC POWER TECH – 2026/08/01 – Current – DHAKA, BANGLADESH 
+1. Prepared electrical Single Line Diagrams (SLDs) and distribution layouts using AutoCAD Electrical. Conducted substation site
+inspections covering transformers, HT/LT switchgear, circuit breakers, busbars, and grounding systems.
+2. Prepared BOQs, material takeoﬀs, cost estimates, and procurement speciﬁcations for power distribution projects.
+3. Designed a 2,232 sq. ft. rooftop solar PV system using PVsyst and supported post-ﬁre electrical inspection and insulation
+resistance testing.
+RESEARCH ASSSITANT – INDEPENDENT UNIVERSITY,BANGLADESH – 2025/08/05 – Current – DHAKA , BANGLADESH 
+1. Conducted CFD and multiphysics thermal simulations, data analysis, and performance evaluation for solar energy
+applications.
+2. Contributed to research in optical sensing, air-quality monitoring, machine learning, and power electronics.
+3. Assisted faculty supervisors with research documentation, manuscript preparation, technical paper checking, data analysis,
+and literature review. Contributed to IEEE conference publications and peer-reviewed manuscripts, developing skills in
+technical writing and research methodology.
+UNDERGRADUATE TEACHING ASSISTANT – INDEPENDENT UNIVERSITY,BANGLADESH – 2025/02/20 – 2025/05/28 – DHAKA,
+BANGLADESH 
+1. Supervised 30+ undergraduate students in Power Electronics and Circuit Simulation laboratories, supporting hands-on
+learning and technical problem-solving. Guided students in circuit design, numerical analysis, simulation, and hardware
+troubleshooting using MATLAB/Simulink, PSIM, and Proteus.
+2. Assessed laboratory work and developed simulation exercises and problem-solving sessions, strengthening students’
+analytical and practical engineering skills.
+Simulation & Design Tools: 
+Cadence Virtuoso (GPDK90nm)  Python  MATLAB  AutoCAD Electrical (2D)  LaTex  Comsol Multiphysics  PVsyst 
+Language:
+English (Elementary)  Bengali 
+Eﬃciency for Access Design Challenge UK – IKEA Foundation Grant (2024 – 2025) 
+ABOUT ME 
+EDUCATION AND TRAINING
+WORK EXPERIENCE
+SKILLS 
+HONOURS AND AWARDS 
+1 / 2
+
+=== PAGE 2 ===
+Awarded by Energy Saving Trust & IKEA Foundation. Selected and awarded grant funding of BDT 35,000 to develop an oﬀ-grid solar
+thermal dehydrator for rural agricultural preservation and clean energy access.
+Champion – Line Following Robot Competition (August 2024) 
+IUB EEE Innovation Fest 2024, Independent University, Bangladesh.
+2025/02/06 – 2025/06/15 
+Design and Implementation of a Two-Wheeled Self-Balancing Robot 
+Designed and developed a two-wheeled self-balancing robot using PID control and motor driver circuits, implementing real-time
+feedback control for stability, balance correction, and motion control under dynamic conditions.
+2025/04/10 – 2025/06/28 
+Simulation-Based Design and Performance Analysis of a 310V/19V 500W Dual-Stage Buck Converter 
+Designed and simulated a 310 V/19 V, 500 W dual-stage MOSFET-based DC–DC buck converter with symmetrical duty cycles
+operating at 20 kHz.
+Analyzed converter performance under varying resistive loads to evaluate eﬃciency, voltage regulation, and system stability through
+simulation.
+Peer-Reviewed Journal Articles (Under Peer Review) 
+1. Samiul Hasan, Fardous Mahmud, Shahriar Kanon, S.M. Muntasir Islam, and Kh Shahriya Zaman, "Environmental Compensation
+and Physics-Informed Machine Learning Calibration of a Low-Cost Optical Dust Sensor for PM2.5 and AQI Monitoring," Indoor and
+Built Environment (Sage Publications). Manuscript ID: IBE-26-0857, submitted September 2026.
+Peer-Reviewed Conference Proceedings & Presentations 
+1. Samiul Hasan, Fardous Mahmud, Naim Abrar Shaharia, Hemal Sharma, Minhazul Abedin Nabil, Kh Shahriya Zaman, and
+Feroz Ahmed, "An Au/ITO Dual-Layer Photonic Crystal Fiber Surface Plasmon Resonance Biosensor for Label-Free Detection and
+Discrimination of Basal, HeLa, and Jurkat Cancer Cells," 2nd International Conference on Advances in Computing,
+Communication, Electrical, and Smart Systems (iCACCESS 2026). (Accepted).
+2. F. Mahmud, Samiul Hasan, Naim Abrar Shaharia, Minhazul Abedin Nabil, H. Sharma, and Khosru M. Salim, "High Step-Up
+Interleaved Boost Converter with Coupled Inductors and Cascadable Symmetric Voltage Multiplier Cell," 2026 IEEE International
+Conference on Power, Electrical, Electronics and Industrial Applications (PEEIACON 2026), Dhaka, Bangladesh, August 2026. 
+(Certiﬁcate of Presentation awarded).
+3. F. Mahmud, Samiul Hasan, H. Sharma, S. H. Kanon, E. Haque, and F. Ahmed, "Numerical Investigation of ZrN-ITO Coated
+Photonic Crystal Fiber Based Plasmonic Refractive Index Sensor," 2025 7th International Conference on Electrical Information and
+Communication Technology (EICT 2025), Khulna, Bangladesh, December 2025. (10.1109/EICT68394.2025.11355580).
+2025/02/05 – 2025/12/31 
+Vice Chairperson — IEEE Photonics Society IUB Student Branch 
+Event & Workshop Leadership: Led the planning and execution of departmental events and technical workshops, including a
+Radio Astronomy workshop, promoting student engagement, peer learning, and technical knowledge sharing.
+Industrial Visit Coordination: Coordinated an educational industrial visit to BTCL (Bangladesh Telecommunications Company
+Limited), connecting academic learning with practical industry experience and professional exposure.
+2024/02/02 – 2024/12/30 
+Event Coordinator — IEEE IUB Student Branch 
+1. Coordinated technical workshops, industrial visits, and student engagement activities, developing skills in event planning,
+teamwork, communication, and logistics.
+2. Supported IUB Admission Tests (Spring & Summer 2024) as a volunteer, assisting with examination coordination and
+candidate management.
+PROJECTS 
+RESEARCH EXPERIENCE & PUBLICATIONS 
+MEMBERSHIPS & VOLUNTARY LEADERSHIP 
+2 / 2

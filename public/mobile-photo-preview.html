@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Photo Placement Options</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 p-4">
+  <div class="max-w-md mx-auto space-y-8">
+    <h1 class="text-xl font-bold">Mobile Photo Placement Preview</h1>
+    <p class="text-xs text-slate-400">Comparing options on a simulated mobile screen (390px width).</p>
+
+    <!-- OPTION 1: Photo at Top of Hero -->
+    <div class="p-6 rounded-2xl bg-[#18181b] border border-white/10 space-y-4">
+      <div class="text-xs font-mono text-sky-400 font-semibold uppercase tracking-wider">Option 1: Photo at the Top</div>
+      <div class="space-y-4">
+        <!-- Photo -->
+        <div class="w-fit rounded-2xl p-1.5 ring-1 ring-white/10 shadow-xl bg-white/5 backdrop-blur-md">
+          <img src="/portrait.png" alt="Samiul Hasan" class="size-36 rounded-xl object-cover" />
+        </div>
+        <div>
+          <p class="font-mono text-xs uppercase tracking-widest text-sky-400">Electrical & Electronic Engineering</p>
+          <h2 class="text-3xl font-bold tracking-tight text-white mt-1">Samiul Hasan</h2>
+          <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+            Electrical and Electronic Engineering graduate from Independent University, Bangladesh with experience in electrical project planning, material estimation, and substation inspections.
+          </p>
+          <div class="mt-4">
+            <span class="inline-flex px-4 py-2 rounded-lg bg-sky-400 text-slate-950 font-semibold text-xs">Download CV (PDF) ↓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 2: Photo between Name and Bio -->
+    <div class="p-6 rounded-2xl bg-[#18181b] border border-white/10 space-y-4">
+      <div class="text-xs font-mono text-sky-400 font-semibold uppercase tracking-wider">Option 2: Photo Between Name & Bio</div>
+      <div class="space-y-4">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-widest text-sky-400">Electrical & Electronic Engineering</p>
+          <h2 class="text-3xl font-bold tracking-tight text-white mt-1">Samiul Hasan</h2>
+        </div>
+        <!-- Photo -->
+        <div class="w-fit rounded-2xl p-1.5 ring-1 ring-white/10 shadow-xl bg-white/5 backdrop-blur-md">
+          <img src="/portrait.png" alt="Samiul Hasan" class="size-36 rounded-xl object-cover" />
+        </div>
+        <div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Electrical and Electronic Engineering graduate from Independent University, Bangladesh with experience in electrical project planning, material estimation, and substation inspections.
+          </p>
+          <div class="mt-4">
+            <span class="inline-flex px-4 py-2 rounded-lg bg-sky-400 text-slate-950 font-semibold text-xs">Download CV (PDF) ↓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 3: Compact Side-by-Side Header on Mobile -->
+    <div class="p-6 rounded-2xl bg-[#18181b] border border-white/10 space-y-4">
+      <div class="text-xs font-mono text-sky-400 font-semibold uppercase tracking-wider">Option 3: Side-by-Side Name & Photo</div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-widest text-sky-400">Electrical & Electronic Engineering</p>
+            <h2 class="text-2xl font-bold tracking-tight text-white mt-1">Samiul Hasan</h2>
+          </div>
+          <div class="shrink-0 w-fit rounded-2xl p-1.5 ring-1 ring-white/10 shadow-xl bg-white/5">
+            <img src="/portrait.png" alt="Samiul Hasan" class="size-24 rounded-xl object-cover" />
+          </div>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Electrical and Electronic Engineering graduate from Independent University, Bangladesh with experience in electrical project planning, material estimation, and substation inspections.
+        </p>
+        <div class="mt-4">
+          <span class="inline-flex px-4 py-2 rounded-lg bg-sky-400 text-slate-950 font-semibold text-xs">Download CV (PDF) ↓</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

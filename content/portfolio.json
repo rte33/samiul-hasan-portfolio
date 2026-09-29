@@ -1,0 +1,113 @@
+{
+  "site": {
+    "title": "Samiul Hasan — Electrical & Electronic Engineering",
+    "description": "Academic and engineering portfolio of Samiul Hasan, Electrical and Electronic Engineering graduate. Sustainable energy systems, power electronics, optical sensing, and electrical project planning.",
+    "author": "Samiul Hasan",
+    "baseUrl": "https://samiulhasan.dev"
+  },
+  "profile": {
+    "name": "Samiul Hasan",
+    "tagline": "Electrical & Electronic Engineering",
+    "subheading": "EEE / B.Sc. 2025",
+    "summary": "Electrical and Electronic Engineering graduate from Independent University, Bangladesh with experience in electrical project planning, material estimation, and substation inspections. Research interests include sustainable energy systems, advanced power electronics, and optical sensing technologies.",
+    "portrait": "/portrait.png",
+    "portraitAlt": "Portrait of Samiul Hasan",
+    "cv": "/CV_Samiul_Hasan.pdf",
+    "cvLabel": "Download CV (PDF) ↓"
+  },
+  "academics": [
+    {
+      "period": "2022 — 2025",
+      "degree": "Bachelor of Science (B.Sc.) in Electrical & Electronic Engineering",
+      "institution": "Independent University, Bangladesh (IUB)",
+      "logo": "/iub-logo.png",
+      "details": "CGPA 3.32 / 4.00 (147 credits, EQF Level 6). Thesis: Numerical Investigation and Performance Enhancement of a PV-Assisted Solar Thermal Dehydrator Using CFD."
+    }
+  ],
+  "focusAreas": {
+    "title": "Focus Areas",
+    "tags": [
+      "Power Systems",
+      "Optical SPR",
+      "PVsyst Solar",
+      "CFD Thermal"
+    ],
+    "metrics": "4 Papers • 1 Grant"
+  },
+  "skills": [
+    {
+      "category": "Simulation & Design Tools",
+      "description": "Cadence Virtuoso (GPDK 90nm), COMSOL Multiphysics, MATLAB/Simulink, PSIM, Proteus, PVsyst, AutoCAD Electrical (2D), LaTeX."
+    },
+    {
+      "category": "Power Systems & Industry Practice",
+      "description": "Single Line Diagrams (SLDs), substation inspection (HT/LT switchgear, transformers, busbars, grounding), BOQs & procurement specifications."
+    },
+    {
+      "category": "Research & Methods",
+      "description": "CFD thermal modeling, optical SPR biosensing, PID feedback control, physics-informed machine learning for air-quality monitoring."
+    }
+  ],
+  "publications": [
+    {
+      "num": "[1]",
+      "badge": "Under Review",
+      "authors": "Hasan, S., Mahmud, F., Kanon, S., Islam, S.M. M., & Zaman, K. S.",
+      "year": "2026",
+      "title": "Environmental Compensation and Physics-Informed Machine Learning Calibration of a Low-Cost Optical Dust Sensor for PM2.5 and AQI Monitoring",
+      "venue": "Indoor and Built Environment (Sage Publications, MS ID: IBE-26-0857)",
+      "url": ""
+    },
+    {
+      "num": "[2]",
+      "badge": "Accepted",
+      "authors": "Hasan, S., Mahmud, F., Shaharia, N. A., Sharma, H., Nabil, M. A., Zaman, K. S., & Ahmed, F.",
+      "year": "2026",
+      "title": "An Au/ITO Dual-Layer Photonic Crystal Fiber Surface Plasmon Resonance Biosensor for Label-Free Detection and Discrimination of Basal, HeLa, and Jurkat Cancer Cells",
+      "venue": "2nd Int. Conf. on Advances in Computing, Communication, Electrical, and Smart Systems (iCACCESS 2026)",
+      "url": ""
+    },
+    {
+      "num": "[3]",
+      "badge": "Presented",
+      "authors": "Mahmud, F., Hasan, S., Shaharia, N. A., Nabil, M. A., Sharma, H., & Salim, K. M.",
+      "year": "2026",
+      "title": "High Step-Up Interleaved Boost Converter with Coupled Inductors and Cascadable Symmetric Voltage Multiplier Cell",
+      "venue": "2026 IEEE Int. Conf. on Power, Electrical, Electronics and Industrial Applications (PEEIACON 2026)",
+      "url": ""
+    },
+    {
+      "num": "[4]",
+      "badge": "IEEE EICT",
+      "authors": "Mahmud, F., Hasan, S., Sharma, H., Kanon, S. H., Haque, E., & Ahmed, F.",
+      "year": "2025",
+      "title": "Numerical Investigation of ZrN-ITO Coated Photonic Crystal Fiber Based Plasmonic Refractive Index Sensor",
+      "venue": "2025 7th Int. Conf. on Electrical Information and Communication Technology (EICT 2025)",
+      "url": "https://doi.org/10.1109/EICT68394.2025.11355580"
+    }
+  ],
+  "coursework": "Power Electronics, Circuit Simulation, CFD Thermal Modeling, Optical Sensing, Advanced Control Systems, Photonic Biosensors.",
+  "contact": {
+    "heading": "Contact",
+    "description": "Available for engineering roles, industrial projects, and academic research collaborations in power systems, solar PV, and sensor technologies.",
+    "email": "samiulhasan803@gmail.com",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:samiulhasan803@gmail.com"
+      },
+      {
+        "label": "Phone: (+880) 1716823310",
+        "url": "tel:+8801716823310"
+      },
+      {
+        "label": "IUB",
+        "url": "https://iub.ac.bd/"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Samiul Hasan — EEE Academic & Professional Portfolio",
+    "revision": "Rev. 2026.09"
+  }
+}
